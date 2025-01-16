@@ -1,0 +1,23 @@
+<%- include('partials/header.ejs') %>
+
+<div class="d-flex justify-content-between flex-wrap mb-4">
+    <div>
+        <h1 class="post-title m-0"><%= title %></h1>
+        <p class="post-date mb-0 fs-6 fw-semibold"><%= formatedDate %></p>
+    </div>
+    <div>
+        <a href="/edit/<%= postId %>" class="btn d-block"><i class="edit-icon fa-solid fa-pen-to-square"></i></a>
+        <form action="/delete/<%= postId %>" method="post">
+            <button class="btn"><i class="trash-icon fa-solid fa-trash"></i></button>
+        </form>
+    </div>
+</div>
+<div class="post-content">
+    <p><%= content %></p>
+</div>
+</main>
+</body>
+</html>
+
+
+<!-- Continuar con la vista de editForm -->

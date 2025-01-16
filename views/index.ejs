@@ -1,0 +1,20 @@
+
+
+<%- include('partials/header.ejs') %>
+    <% if (posts.length === 0) { %>
+        <h1 class="text-center">Write your first blog!✍️</h1>
+    <% } else { %>
+        <% posts.forEach((post, index) => { %>
+            <div class="post">
+                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                    <a href="/postview/<%= index %>" class="nav-link fs-3 posts-title"><%= post.title %></a>
+                    <p class="posts-date mb-0 fs-6 fw-semibold"><%= post.formatedDate %></p>
+                </div>
+                <hr>
+            </div>
+        <% }); %>
+        <% } %>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs') %>
+<form method="POST" action="/update/<%= postId %>">
+    <div class="mb-3">
+        <label for="title" class="form-label fw-bold">title</label>
+        <input type="text" class="form-control" name="title" id="title" value="<%= title %>" placeholder="Pizza ipsum dolor meat lovers buffalo.🍕">
+    </div>
+    <div class="mb-3">
+        <label for="content" class="form-label fw-bold">content</label>
+        <textarea class="form-control" name="content" id="content" placeholder="Lorem ipsum dolor sit amet consectetur. Ipsum et nisl eu commodo risus fames massa. Viverra ornare aliquam tellus ut cras amet. Et quam laoreet aliquam sit. Dignissim auctor quam dis sodales malesuada luctus faucibus. Velit aliquet arcu accumsan eget venenatis turpis sed. Libero purus orci vitae varius nisl odio tempor. Nec quam duis pellentesque volutpat augue donec elit." rows="6"><%= content%></textarea>
+    </div>
+    <div class="row">
+        <a href="/" class="btn text-uppercase fw-semibold col-6 cancel-btn">cancel</a>
+        <button class="btn text-uppercase fw-semibold col-6 custom-btn">save</button>
+    </div>
+</form>
+</main>
+</body>
+</html>

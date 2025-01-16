@@ -1,0 +1,49 @@
+
+:root{
+    --bg-color: hsl(207, 18%, 10%);
+    --gold-color: hsl(39, 26%, 60%);
+    --grey-color: hsl(0, 0%, 64%);
+    --white-color: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    font-family: 'Poppins', serif;
+}
+
+.post-title{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.posts-date{
+    color: var(--grey-color);
+}
+
+.posts-title:hover + .posts-date{
+    color: var(--gold-color);
+}
+
+.post-date{
+    color: var(--gold-color);
+}
+
+.custom-btn{
+    background-color: var(--gold-color);
+}
+.custom-btn:hover{
+    background-color: hsl(39, 26%, 50%);
+    color: #000000;
+}
+
+.edit-icon{
+    color: hsl(207, 18%, 30%);
+}
+
+.trash-icon{
+    color: hsl(207, 18%, 30%);
+}
+
+.cancel-btn{
+    color: hsl(207, 18%, 30%);
+}
