@@ -4,7 +4,7 @@ A simple blog web application built with Node.js, Express.js, EJS and Bootstrap.
 
 ## Stack
 - Node.js: Server-side JavaScript runtime.
-- Express: Web framework for Node.js.
+- Express.js: Web framework for Node.js.
 - EJS: Templating engine for generating HTML.
 - Bootstrap: CSS framework for responsive design.
 
